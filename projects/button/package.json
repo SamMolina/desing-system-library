@@ -1,5 +1,6 @@
 {
-  "name": "button",
+  "name": "@sammolina/desing-system-library-button",
+  "private": false,
   "version": "0.0.1",
   "peerDependencies": {
     "@angular/common": "^14.0.0",
@@ -7,5 +8,19 @@
   },
   "dependencies": {
     "tslib": "^2.3.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SamMolina/desing-system-library.git"
+  },
+  "author": "Sam Molina",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SamMolina/desing-system-library/issues"
+  },
+  "homepage": "https://github.com/SamMolina/desing-system-library#readme",
+  "publishConfig": {
+    "@SamMolina:registry":"https://npm.pkg.github.com",
+    "access": "public"
   }
 }
