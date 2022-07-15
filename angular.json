@@ -3,5 +3,67 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
+    "button-component-library": {
+      "projectType": "library",
+      "root": "projects/button-component-library",
+      "sourceRoot": "projects/button-component-library/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/button-component-library/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/button-component-library/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/button-component-library/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/button-component-library/src/test.ts",
+            "tsConfig": "projects/button-component-library/tsconfig.spec.json",
+            "karmaConfig": "projects/button-component-library/karma.conf.js"
+          }
+        }
+      }
+    },
+    "button": {
+      "projectType": "library",
+      "root": "projects/button",
+      "sourceRoot": "projects/button/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/button/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/button/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/button/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/button/src/test.ts",
+            "tsConfig": "projects/button/tsconfig.spec.json",
+            "karmaConfig": "projects/button/karma.conf.js"
+          }
+        }
+      }
+    }
   }
 }
