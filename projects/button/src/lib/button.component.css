@@ -1,8 +1,8 @@
 @import '~roboto-fontface/css/roboto/roboto-fontface.css';
 
 .storybook-button {
-  background-color: #00f2a9;
-  border-color: #00f2a9;
+  background-color: #010101;
+  border-color: #010101;
   border-radius: 4px;
   font-family: 'Roboto-Medium';
   font-size: 16pt;
@@ -12,7 +12,7 @@
 
 .storybook-button--primary {
   color: white;
-  background-color: #00f2a9;
+  background-color: #010101;
 }
 
 .storybook-button--primary:hover:enabled {
@@ -20,26 +20,26 @@
 }
 
 .storybook-button--secondary {
-  color: #00f2a9;
+  color: #010101;
   background-color: transparent;
   border-color: #fafa99;
   border-width: 1px;
 }
 
 .storybook-button--secondary:hover:enabled {
-  color: #00f2a9;
+  color: #010101;
   background-color: rgba(123, 127, 0, 0.12);
 }
 
 .storybook-button--primary:disabled {
   color: #FFFFFF;
-  background-color: #00f2a9;
+  background-color: #010101;
   cursor: not-allowed;
   opacity: 50%
 }
 
 .storybook-button--secondary:disabled {
-  color: #00f2a9;
+  color: #010101;
   background-color: transparent;
   border-color: rgba(123, 127, 0, 0.12);
   border-width: 1px;
